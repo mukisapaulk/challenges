@@ -35,10 +35,11 @@ img{
 border-radius: 1rem;
 background-color: hsl(0, 0%, 100%);
 margin: 0 auto;
-padding: 2.5rem;
+padding: 2rem;
+max-width: 600px;
 }
 h1{
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     margin: 1rem 1rem 1rem 0;
 }
 p{
