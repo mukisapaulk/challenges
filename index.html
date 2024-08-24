@@ -1,15 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link rel="stylesheet" type="text/css" href="./main.css"/>
-  <title>challenges</title>
+    <script>
+        const text = document.getElementById('text');
+        const range = 4;
+
+        function updateShadow(event) {
+            const x = Math.round(event.pageX * range / window.innerWidth) - range / 2;
+            const y = Math.round(event.pageY * range / window.innerHeight) - range / 2;
+            gsap.to(text, {
+                '--x': x,
+                '--y': y,
+            });
+        }
+
+        document.body.addEventListener('mousemove', updateShadow);
+
+        function navigateToChallenge() {
+            const select = document.querySelector('select[name="challenge"]');
+            const selectedValue = select.value;
+            if (selectedValue) {
+                window.location.href = selectedValue;
+            }
+        }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="stylesheet" type="text/css" href="./main.css"/>
+    <title>Challenges</title>
 </head>
 <body>
- <section>
-    <img src="./assets/images/OLDTVFRAME.png" alt="tv">
-    <div class="container">this is a demo</div>
- </section>
+    <section>
+        <img src="./assets/images/OLDTVFRAME.png" alt="tv">
+        <div class="container">
+            <h4 id="text">Welcome to the challenges</h4>
+            <label for="challenge">Select a challenge to preview:</label>
+            <select name="challenge" onchange="navigateToChallenge()">
+                <option value="" selected disabled>Select a challenge</option>
+                <option value="./receipepage.html">Receipe menu</option>
+                <option value="./sociallinksprofile.html">Social Links Profile</option>
+            </select>
+        </div>
+    </section>
 </body>
+</html>

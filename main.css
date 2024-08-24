@@ -15,10 +15,10 @@ body{
     font-size: 14px;
     background-color:hsl(0, 0%, 8%) ;
     background-image:
-    radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
-    radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
-    radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
-    radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+    radial-gradient(white, #ff92ee 2px, transparent 40px),
+    radial-gradient(white, #ff92ee 1px, transparent 30px),
+    radial-gradient(white, #ff92ee 2px, transparent 40px),
+    radial-gradient(#d81dc4, #ff92ef3a 2px, transparent 30px);
     background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
     background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
     padding: 2rem;
@@ -27,20 +27,60 @@ section{
 width: 750px;
 margin: 0 auto;
 position: relative;
+
 }
 img{
     height: auto;
-    width: 700px;
+    width: 650px;
     padding: 0;
+   
 }
 .container{
-    background-color: #444444db;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    background-color: #141414c6;
+    box-shadow: 0 4px 30px rgba(68, 67, 67, 0.1);
     backdrop-filter: blur(5.4px);
     -webkit-backdrop-filter: blur(5.4px);
-    width: 450px;
-    height: 500px;
+    width: 410px;
+    height: 321px;
     position: absolute;
-    top:0;
-    left:12%;
+    top:10.6%;
+    left:7%;
+    border-radius: 2.2rem;
 }
+:root {
+    --x: -2px;
+    --y: -2px;
+  }
+  
+  #text {
+    color: #fff;
+    font-family: 'Glory', sans-serif;
+    font-size: 2rem;
+    padding: 1.5rem;
+    text-align: center;
+    font-weight: 800;
+    letter-spacing: 4px;
+    text-shadow:
+      calc(var(--x) * -1) calc(var(--y) * -1) 0px #ff92ee,
+      calc(var(--x) * -2) calc(var(--y) * -2) 0px #fa6cff,
+      calc(var(--x) * -3) calc(var(--y) * -3) 0px #d81dc4;
+  }
+  label{
+    padding: 1rem;
+    font-size: 1.5rem;
+    text-shadow: #d81dc4 0px 0px 39px;
+    color: #ff92ee;
+    text-align: justify;
+
+  }
+  select{
+    padding: 0.4rem;
+    background: #ff92ee;
+    text-shadow: #d81dc4 0px 0px 39px;
+    border: none;
+    color: white;
+    border-radius: 0.5rem;
+    font-family: "Matemasie", sans-serif;
+    margin: 2rem 7.2rem 0rem 7.2rem; 
+  }
+ 
