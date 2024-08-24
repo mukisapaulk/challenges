@@ -1,0 +1,78 @@
+/* 
+- Mobile: 375px
+- Desktop: 1440px
+
+- Green: hsl(75, 94%, 57%)
+
+- White: hsl(0, 0%, 100%)
+
+- Grey 700: hsl(0, 0%, 20%)
+- Grey 800: hsl(0, 0%, 12%)
+- Grey 900: hsl(0, 0%, 8%)
+
+- Font size (paragraph): 14px
+Font
+
+- Family: [Inter](https://fonts.google.com/specimen/Inter)
+- Weights: 400, 600, 700 */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+ *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+ }
+ body{
+    font-size: 14px;
+    background-color:hsl(0, 0%, 8%);
+    padding: 5rem;
+    font-family: "Inter", sans-serif;
+ }
+ section{
+    width: 300px;
+    background-color:hsl(0, 0%, 12%) ;
+    padding: 1rem;
+    border-radius: 0.4rem;
+    margin: 0 auto;
+    text-align: center;
+ }
+ img{
+    border-radius: 50%;
+    height: 100px ;
+    width: 100px;
+    padding: 0; 
+ }
+ h1{
+    color:hsl(0, 0%, 100%);
+    padding: 0.5rem;
+    font-weight: 700;
+
+ }
+ h4{
+    color:hsl(75, 94%, 57%);
+    font-size: 0.8rem;
+    font-weight: 400;
+ }
+ ul{
+    list-style-type: none;
+
+ }
+ li{
+    color:hsl(0, 0%, 100%) ;
+    padding: 0.5rem;
+ }
+ p{
+    padding: 1rem ;
+    color:hsl(0, 0%, 100%) ;
+    font-size: 0.7rem;
+    
+ }
+ ul li a{
+    text-decoration: none;
+    color:hsl(0, 0%, 100%) ;
+    cursor: pointer;
+    background-color:hsl(0, 0%, 20%) ;
+    display:block;
+    padding: 0.6rem;
+    border-radius: 0.3rem;
+    font-weight: 600;
+ }
