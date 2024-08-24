@@ -12,6 +12,7 @@
 }
 body{
     font-family: "Matemasie", sans-serif;
+    font-size: 14px;
     background-color:hsl(0, 0%, 8%) ;
     background-image:
     radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
@@ -20,4 +21,26 @@ body{
     radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
     background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
     background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+    padding: 2rem;
+}
+section{
+width: 750px;
+margin: 0 auto;
+position: relative;
+}
+img{
+    height: auto;
+    width: 700px;
+    padding: 0;
+}
+.container{
+    background-color: #444444db;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.4px);
+    -webkit-backdrop-filter: blur(5.4px);
+    width: 450px;
+    height: 500px;
+    position: absolute;
+    top:0;
+    left:12%;
 }
