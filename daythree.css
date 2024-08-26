@@ -1,0 +1,90 @@
+/* Primary
+- Soft blue: hsl(215, 51%, 70%)
+- Cyan: hsl(178, 100%, 50%)
+Neutral
+- Very dark blue (main BG): hsl(217, 54%, 11%)
+- Very dark blue (card BG): hsl(216, 50%, 16%)
+- Very dark blue (line): hsl(215, 32%, 27%)
+- White: hsl(0, 0%, 100%)
+Typography
+Body Copy
+- Font size (paragraph): 18px
+Font
+- Family: [Outfit](https://fonts.google.com/specimen/Outfit)
+- Weights: 300, 400, 600 */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 18px;
+    font-family: "Outfit", sans-serif;
+    background-color: hsl(217, 54%, 11%);
+    padding: 2rem 25rem 2rem 25rem ;
+}
+main{
+ background-color: hsl(216, 50%, 16%);
+ width: 300px;
+ box-shadow:hsl(214, 100%, 3%) ;
+ margin: 0 auto;
+ border-radius: 1rem;
+ padding: 1rem;
+}
+main img{
+    width: 100%;
+    border-radius: 0.6rem;
+}
+h1{
+    color: hsl(0, 0%, 100%);
+    font-size: 1.5rem;
+    padding-block: 0.7rem;
+}
+p{
+    color: hsl(215, 51%, 70%);
+    font-size: 1rem;
+    padding-bottom: 0.7rem;
+    font-weight: 300;
+}
+ul{
+    list-style-type: none;
+    padding-bottom: 0.7rem;
+}
+li{
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 300;
+}
+li:last-child{
+    color: hsl(215, 51%, 70%);
+    margin-left: 5rem;
+}
+li:first-child{
+    color:hsl(178, 100%, 50%)
+}
+hr{
+    color:hsl(215, 32%, 27%);
+    margin-bottom: 0.7rem;
+}
+.creater img{
+    width: 30px;
+    border: 1px solid  hsl(215, 32%, 27%);
+    border-radius: 50%;
+}
+.creater ul li{
+    padding: 0rem;
+    margin: 0;
+    font-weight: 300;
+    font-size: 1rem;
+    text-align: justify;
+}
+.creater ul li:last-child{
+    margin-left: 0.5rem;
+}
+span{
+    color: hsl(0, 0%, 100%);
+    font-weight: 300;
+}
