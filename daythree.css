@@ -24,7 +24,7 @@ body{
     font-size: 18px;
     font-family: "Outfit", sans-serif;
     background-color: hsl(217, 54%, 11%);
-    padding: 2rem 25rem 2rem 25rem ;
+    padding: 5rem 25rem 2rem 25rem ;
 }
 main{
  background-color: hsl(216, 50%, 16%);
@@ -88,3 +88,5 @@ span{
     color: hsl(0, 0%, 100%);
     font-weight: 300;
 }
+.attribution { font-size: 11px; text-align: center; color: white; padding: 20px; }
+.attribution a { color: hsl(228, 45%, 44%); }
