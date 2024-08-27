@@ -24,7 +24,8 @@ body{
     font-size: 18px;
     font-family: "Outfit", sans-serif;
     background-color: hsl(217, 54%, 11%);
-    padding: 5rem 25rem 2rem 25rem ;
+    padding: 2rem 2rem 2rem 2rem ;
+    height: 100vh;
 }
 main{
  background-color: hsl(216, 50%, 16%);
@@ -73,17 +74,25 @@ hr{
     width: 30px;
     border: 1px solid  hsl(215, 32%, 27%);
     border-radius: 50%;
+    float:left;
+    margin-right: 0.5rem;
 }
-.creater ul li{
+.creater img::after{
+    content: "";
+    display: block;
+    clear:both;
+}
+
+ul li{
     padding: 0rem;
     margin: 0;
     font-weight: 300;
     font-size: 1rem;
     text-align: justify;
 }
-.creater ul li:last-child{
-    margin-left: 0.5rem;
-}
+/* .creater ul li:last-child{
+    margin-left: 0.5rem; */
+/* } */
 span{
     color: hsl(0, 0%, 100%);
     font-weight: 300;
