@@ -1,0 +1,121 @@
+/* The designs were created to the following widths:
+- Mobile: 375px
+- Desktop: 1440px
+### Primary
+- Cyan: hsl(179, 62%, 43%)
+- Bright Yellow: hsl(71, 73%, 54%)
+### Neutral
+- Light Gray: hsl(204, 43%, 93%)
+- Grayish Blue: hsl(218, 22%, 67%)
+- Font size: 16px
+- Family: [Karla](https://fonts.google.com/specimen/Karla)
+- Weights: 400, 700 */
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 16px;
+    background-color:hsl(204, 43%, 93%) ;
+    padding: 4rem;
+    font-family: "Karla", sans-serif;
+}
+main{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin: 0 auto;
+    max-width:600px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.08);
+    border-radius: 0.5rem;
+
+}
+main section:nth-child(1){
+    grid-column: span 4;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 0.4rem 0.4rem 0 0;
+}
+main section:nth-child(1) h1{
+    color: hsl(179, 62%, 43%);
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+}
+main section:nth-child(1) h2{
+    color: hsl(71, 73%, 54%);
+    font-weight: 700;
+    font-size: 1rem;
+    padding-bottom: 0.5rem;
+}
+main section:nth-child(1) p{
+    font-weight: 300;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color:hsl(218, 22%, 67%);
+    
+}
+main section:nth-child(2){
+    grid-column: span 2;
+    padding: 2rem;
+    background-color: hsl(179, 62%, 43%);
+    border-radius: 0 0 0 0.4rem;
+}
+main section:nth-child(2) h3, main section:nth-child(3) h3{
+    color:hsl(204, 43%, 93%);
+    font-size: 1rem;
+    padding-bottom: 0.8rem;
+}
+.price span{
+    font-size: 2rem;
+    color:hsl(203, 44%, 93%);
+    margin-right: 10px;
+    font-weight: 700;
+}
+.price p{
+    color:hsla(203, 44%, 93%, 0.984); 
+}
+main section:nth-child(2) p, main section:nth-child(3) p{
+    color:hsla(203, 44%, 93%, 0.936) ;
+    font-size: 0.9rem;
+    margin: 0.1rem;
+}
+button{
+    padding: 0.7rem;
+    width: 100%;
+    background-color:hsl(71, 73%, 54%) ;
+    color: hsl(204, 43%, 93%);
+    border-radius: 0.2rem;
+    border: none;
+    margin-top: 0.8rem;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.05);
+}
+main section:nth-child(3){
+    padding: 2rem;
+    grid-column: span 2;
+    background-color: hsla(179, 62%, 43%, 0.813);
+    border-radius: 0 0 0.4rem 0 ;
+}
+main section:nth-child(3) p{
+    line-height: 1.2;
+}
+footer{
+    padding: 1rem;
+    text-align: center;
+}
+/* responsive */
+@media screen and (max-width:500px) {
+  main{
+    grid-template-columns: 1fr;
+  }
+  main section:nth-child(2){
+    grid-column: span 4;
+    border-radius: 0;
+  }
+  main section:nth-child(3){
+    border-radius: 0 0 0.5rem 0.5rem;
+  }
+}
