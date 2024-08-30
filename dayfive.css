@@ -1,0 +1,123 @@
+/* - Mobile: 375px
+- Desktop: 1440px
+Moderate violet: hsl(263, 55%, 52%)
+Very dark grayish blue: hsl(217, 19%, 35%)
+Very dark blackish blue: hsl(219, 29%, 14%)
+White: hsl(0, 0%, 100%)
+Light gray: hsl(0, 0%, 81%)
+Light grayish blue: hsl(210, 46%, 95%)
+
+1. "Verified Graduate" has the same color as the person's name with 50% opacity
+2. Review paragraphs inside the quotations have the same color as well, but are at 70% opacity
+
+- Font size: 13px
+
+- Family: [Barlow Semi Condensed](https://fonts.google.com/specimen/Barlow+Semi+Condensed)
+- Weights: 500, 600 */
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-size: 13px;
+    background-color:hsl(210, 46%, 95%);
+
+}
+main{
+    margin: 30px auto;
+    max-width: 1100px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap:1rem;
+    
+}
+section{
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.8rem;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.04);
+}
+.user{
+    display: flex;
+    gap:10px;
+    padding-bottom: 1rem;
+}
+img{
+    border-radius: 50%;
+    width: 30px;
+    border: 1px solid hsl(0, 0%, 81%);
+}
+ul{
+    padding: 0;
+    list-style-type: none;
+}
+ul li{
+    color: hsl(0, 0%, 100%);
+}
+ul li:last-child{
+    color: hsla(0, 0%, 100%, 0.5);
+}
+p{
+    color: hsla(0, 0%, 100%, 0.7);
+}
+h1{
+    color:hsl(0, 0%, 100%);
+    font-weight: 600;
+    padding-bottom: 1rem;
+}
+section:nth-child(1){
+    background-image: url('./images/bg-pattern-quotation.svg');
+    background-repeat: no-repeat;
+    /* background-position-x: 70px; */
+    background-position-x: 250px;
+    background-color: hsl(263, 55%, 52%);
+    
+    grid-column: span 2;
+}
+section:nth-child(2){
+    background-color: hsl(217, 19%, 35%);
+    
+}
+section:nth-child(3){
+    grid-column: 1;
+    
+}
+section:nth-child(4){
+    grid-column: span 2;
+    background-color: hsl(219, 29%, 14%);
+}
+section:nth-child(5){
+    grid-column: 4;
+    grid-row: 1/span 2;
+}
+footer{
+    text-align: center;
+}
+section:nth-child(3), section:nth-child(5){
+    background-color: hsl(0, 0%, 100%);
+}
+section:nth-child(3) p, section:nth-child(5) p{
+    color:  hsl(0, 0%, 81%);
+}
+section:nth-child(3) ul li:last-child , section:nth-child(5) ul li:last-child{
+    color: rgba(0, 0, 0, 0.50);
+}
+section:nth-child(3) ul li , section:nth-child(5) ul li{
+    color: black;
+}
+section:nth-child(3) h1 , section:nth-child(5) h1{
+    color: black;
+}
+@media screen and (max-width:900px) {
+    main{
+        display: block;
+        padding: 1rem;
+    }
+    section{
+        margin: 1rem;
+    }
+}
