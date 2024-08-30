@@ -102,7 +102,7 @@ section:nth-child(3), section:nth-child(5){
     background-color: hsl(0, 0%, 100%);
 }
 section:nth-child(3) p, section:nth-child(5) p{
-    color:  hsl(0, 0%, 81%);
+    color: rgba(0, 0, 0, 0.70)
 }
 section:nth-child(3) ul li:last-child , section:nth-child(5) ul li:last-child{
     color: rgba(0, 0, 0, 0.50);
