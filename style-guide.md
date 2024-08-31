@@ -11,22 +11,25 @@ The designs were created to the following widths:
 
 ## Colors
 
-- Yellow: hsl(47, 88%, 63%)
+### Primary
 
-- White: hsl(0, 0%, 100%)
+Dark cyan: hsl(185, 75%, 39%)
+Very dark desaturated blue: hsl(229, 23%, 23%)
+Dark grayish blue: hsl(227, 10%, 46%)
 
-- Gray 500: hsl(0, 0%, 42%)
-- Gray 950: hsl(0, 0%, 7%)
+### Neutral
+
+Dark gray: hsl(0, 0%, 59%)
 
 ## Typography
 
 ### Body Copy
 
-- Font size (paragraph): 16px
+- Font size (name and stats): 18px
 
 ### Font
 
-- Family: [Figtree](https://fonts.google.com/specimen/Figtree)
-- Weights: 500, 800
+- Family: [Kumbh Sans](https://fonts.google.com/specimen/Kumbh+Sans)
+- Weights: 400, 700
 
-> 💎 This is a free+ challenge. So, if you want to see all the design details and practice working with professional tools like Figma, you can download the design file from where you downloaded the starter code.
+> 💎 [Upgrade to Pro](https://www.frontendmentor.io/pro?ref=style-guide) for design file access to see all design details and get hands-on experience using a professional workflow with tools like Figma.
